@@ -1,0 +1,38 @@
+.card{
+    border: 1px solid gray;
+}
+.card__content{
+    background-color: beige;
+}
+.card__titleContent{
+    gap: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card__titleCal{
+    font-size: 14px;
+}
+.card__buttonIncidencias{
+    width: 500px;
+    p{
+        color: red;
+    }
+}
+.card__titleIncidencias{
+    border: 1px solid orange;
+    border-radius: 10px;
+    padding: 20px;
+}
+.card__checkboxContent{
+    margin-top: 20px;
+}
+.card__checkbox{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+}
+.card__date{
+    display: flex;
+    justify-content: flex-end;
+}
