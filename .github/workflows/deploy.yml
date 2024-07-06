@@ -39,4 +39,4 @@ jobs:
         with:
           project: "diet-widget"
           entrypoint: "maint.ts"
-          root: ""
+          root: "build"
