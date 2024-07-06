@@ -1,0 +1,37 @@
+.example-h2 {
+  margin: 10px;
+}
+
+.example-section {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  height: 60px;
+}
+
+.example-margin {
+  margin: 0 10px;
+}
+
+.example-card {
+  margin-bottom: 10px;
+}
+.spinner-container {
+  position: relative;
+  width: 100%; /* Ajusta el tamaño según sea necesario */
+  height: 100px; /* Ajusta el tamaño según sea necesario */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+mat-progress-spinner {
+  position: absolute;
+}
+
+.percentage {
+  position: absolute;
+  font-size: 1.5rem; /* Ajusta el tamaño del texto según sea necesario */
+  font-weight: bold;
+  color: #000; /* Cambia el color del texto según sea necesario */
+}

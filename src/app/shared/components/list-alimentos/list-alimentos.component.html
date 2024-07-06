@@ -1,0 +1,27 @@
+
+
+<div class="list-meal">
+  <section class="example-section">
+    <span class="example-list-section">
+      <mat-checkbox
+        class="example-margin"
+        [checked]="comida().completed"
+        [indeterminate]="partiallyComplete()"
+        (change)="update($event.checked)"
+      >
+        {{comida().name}}
+      </mat-checkbox>
+    </span>
+    <span class="example-list-section">
+      <ul>
+        @for (listalimentos of comida().listalimentos; track listalimentos; let i = $index) {
+          <li>
+            <mat-checkbox [checked]="listalimentos.completed" (change)="update($event.checked, i)">
+              {{listalimentos.name + listalimentos.calorias + 'kcal'}}
+            </mat-checkbox>
+          </li>
+        }
+      </ul>
+    </span>
+  </section>
+</div>
