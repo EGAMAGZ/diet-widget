@@ -1,0 +1,13 @@
+<div class="flex flex-col justify-center ">
+  <h2 class="example-h2 flex justify-center">Result</h2>
+
+  <div class="spinner-container">
+    <mat-progress-spinner
+      [mode]="mode"
+      [value]="value"
+      [diameter]="100">
+    </mat-progress-spinner>
+    <div class="percentage">{{ value }}%</div>
+  </div>
+  <div class="flex justify-center">{{ caloriasDiarias }} Kcal / {{ caloriasTotales }} Kcal</div>
+</div>
