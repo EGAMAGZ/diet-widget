@@ -12,4 +12,6 @@ Para la creación de este sistema se utilizaron las siguientes tecnologías y ro
 - **Fernando**: Desarrollador
 
 
+
+
 ![Texto alternativo](https://cdn.shopify.com/s/files/1/0258/8983/3053/files/PAGINA-31-NOTA-SALUD_480x480.jpg?v=1608800578)
