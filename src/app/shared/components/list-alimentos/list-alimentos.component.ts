@@ -1,8 +1,7 @@
-
-
-import {ChangeDetectionStrategy, Component, computed, signal} from '@angular/core';
+import {ChangeDetectionStrategy, Component, computed, OnInit, signal} from '@angular/core';
 import {FormsModule} from '@angular/forms';
 import {MatCheckboxModule} from '@angular/material/checkbox';
+import axios from "axios";
 
 export interface ListAlimentos {
   name: string;
@@ -22,16 +21,19 @@ export interface ListAlimentos {
   imports: [MatCheckboxModule, FormsModule],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class ListAlimentosBreakfast {
+export class ListAlimentosBreakfast implements OnInit {
   readonly comida = signal<ListAlimentos>({
     name: 'Breakfast',
     completed: false,
     listalimentos: [
-      {name: 'Proteina(Huevos)', completed: false, calorias:200},
-      {name: 'Verduras', completed: false, calorias:50},
-      {name: 'Fruta', completed: false, calorias:70},
+      {name: 'Proteina(Huevos)', completed: false, calorias: 200},
+      {name: 'Verduras', completed: false, calorias: 50},
+      {name: 'Fruta', completed: false, calorias: 70},
     ],
   });
+
+  ngOnInit() {
+  }
 
   readonly partiallyComplete = computed(() => {
     const task = this.comida();
