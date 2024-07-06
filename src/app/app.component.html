@@ -1,7 +1,12 @@
 <div data-theme="ligth">
   <!--  <router-outlet/>-->
-  <app-wheel-implementation></app-wheel-implementation>
-  <app-calorias-diarias></app-calorias-diarias>
-  <app-list-alimentos></app-list-alimentos>
-  <app-list-bitacora></app-list-bitacora>
+  <div class="flex gap-4 justify-center 	">
+    <app-wheel-implementation class="w-1/4"></app-wheel-implementation>
+    <div class="w-3/4 flex flex-col gap-4 h-[244px] overflow-scroll ">
+      <app-list-bitacora></app-list-bitacora>
+    </div>
+  </div>
+  <div>
+    <app-list-alimentos></app-list-alimentos>
+  </div>
 </div>
