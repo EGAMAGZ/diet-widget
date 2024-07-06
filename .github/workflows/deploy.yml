@@ -38,5 +38,5 @@ jobs:
         uses: denoland/deployctl@v1
         with:
           project: "diet-widget"
-          entrypoint: "maint.ts"
-          root: "build"
+          entrypoint: ""
+          root: "dist/diet-widget/browser"
