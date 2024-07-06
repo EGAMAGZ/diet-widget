@@ -21,3 +21,9 @@ export interface Task {
 export class ListBitacoraComponent {
 
 }
+export interface CardItem {
+  title: string;
+  kcal: string;
+  items: { name: string, kcal: string }[];
+  date: string;
+}
