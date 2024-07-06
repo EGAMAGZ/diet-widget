@@ -23,7 +23,7 @@ export interface ListAlimentos {
 })
 export class ListAlimentosBreakfast {
   readonly comida = signal<ListAlimentos>({
-    name: 'Breakfast',
+    name: 'Desayuno',
     completed: false,
     listalimentos: [
       { name: 'Proteina(Huevos)', completed: false, calorias: 200 },
