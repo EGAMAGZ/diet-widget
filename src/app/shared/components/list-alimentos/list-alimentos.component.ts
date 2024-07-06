@@ -1,8 +1,7 @@
-
-
-import {ChangeDetectionStrategy, Component, computed, signal} from '@angular/core';
-import {FormsModule} from '@angular/forms';
-import {MatCheckboxModule} from '@angular/material/checkbox';
+import { MealPlan, mealPlan } from '@/app/data/food-data';
+import { ChangeDetectionStrategy, Component, computed, signal } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { MatCheckboxModule } from '@angular/material/checkbox';
 
 export interface ListAlimentos {
   name: string;
@@ -27,9 +26,9 @@ export class ListAlimentosBreakfast {
     name: 'Breakfast',
     completed: false,
     listalimentos: [
-      {name: 'Proteina(Huevos)', completed: false, calorias:200},
-      {name: 'Verduras', completed: false, calorias:50},
-      {name: 'Fruta', completed: false, calorias:70},
+      { name: 'Proteina(Huevos)', completed: false, calorias: 200 },
+      { name: 'Verduras', completed: false, calorias: 50 },
+      { name: 'Fruta', completed: false, calorias: 70 },
     ],
   });
 
@@ -50,7 +49,7 @@ export class ListAlimentosBreakfast {
         c.listalimentos![index].completed = completed;
         c.completed = c.listalimentos?.every(t => t.completed) ?? true;
       }
-      return {...c};
+      return { ...c };
     });
   }
 }
