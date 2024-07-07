@@ -16,12 +16,12 @@ Para la creación de este sistema se utilizaron las siguientes tecnologías y ro
 
 **¿Para quién?**
 - Nutriologos y pacientes
-- ** Nutricionista **
+**Nutricionista**
 - Persona con profecion nutricional
 - Busca tener seguimiento continuo de sus pacientes, de una forma 
 accesible y digital
 
-- **Paciente** 
+**Paciente** 
 - Personas jovenes de 20 - 30, procupadas por su salud alimenticia
 - Busca asesoria
 - Nativos digitales
